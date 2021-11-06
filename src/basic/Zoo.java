@@ -1,23 +1,12 @@
 package basic;
 
-public class Zoo{
-    String name;
-    String location;
-    int price;
-
- public Zoo(String name, String location, int price){
-     this.name = name;
-     this.location = location;
-     this.price = price;
- }
-    public int pay(int cash) {
-        if (cash >= price) {
-            int result = cash - price;
-            return result;
-        }
-         else  {
-            int result = price - cash;
-            throw new ArithmeticException("Замало коштів, будь ласка додайте " + result);
-         }
- }
+public class Zoo {
+    public static void main(String [] args){
+    People a = new People("","", "","");
+    Event b = new Event("","", 100);
+        System.out.println(a.age(20));
+        System.out.println(b.pay(250));
+        System.out.println(a.amountofPeople());
+        System.out.println(b.annonceStartShow());
+    }
 }
